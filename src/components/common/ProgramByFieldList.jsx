@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ProyectoOIS from '../ProyectoOIS';
+import ProyectoOIS from '../HomeView';
 import ProgramByField from './ProgramByField';
 
 const matter = [
