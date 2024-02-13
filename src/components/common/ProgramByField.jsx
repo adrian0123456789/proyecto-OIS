@@ -6,18 +6,19 @@ const StyledProgramByField = styled.div`
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   width: 200px;
   height: 200px;
-  gap: 16px;
+  gap: 28px;
   img {
     width: 79px;
     height: 78px;
   }
   p {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-weight: 500;
   }

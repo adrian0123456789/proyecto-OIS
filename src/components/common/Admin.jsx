@@ -15,9 +15,6 @@ const StyledHeaderAdminContent = styled.div`
   padding: 22px 0;
   display: flex;
   justify-content: space-between;
-  img {
-    width: 170px;
-  }
   div {
     display: flex;
     align-items: center;
@@ -88,11 +85,12 @@ const Admin = () => {
     <StyledAdmin>
       <StyledHeaderAdmin>
         <StyledHeaderAdminContent>
-          <img src="https://s3-alpha-sig.figma.com/img/b0df/28d7/7937cdd175de1b75f441c7471b2166f5?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtcO4AL09DvtJp7Q1yzd3kVzuwnZ3d3u61PGetFSqICTBbDbzv4yMvJysagsmss4mTcz1v7us9SoCdBle74TOSyVbxQjRTw-~cgNCxrOmWBACUJVZxFHPuDU~yJFPnSRwtauQFWqBEjfgg2kA~xA4Sy6q4YOPukAvVkTDp64m6OrU1qYBgmMPmcBkvUfKu5oGKOjtelR63UWUXi2pSv0aGq2x1TVl24avXUoCqWftsfwOQH31-D9SDTkt4geEh85yK~RfrqlzsmhoVHKGdEf94jqQJBEGocFcJCrAOO7OOn4N5LtNHGpXzq3MKsSbyuAhz24VG-RYu2JmTpk8qv8Kw__" />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/b0df/28d7/7937cdd175de1b75f441c7471b2166f5?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtcO4AL09DvtJp7Q1yzd3kVzuwnZ3d3u61PGetFSqICTBbDbzv4yMvJysagsmss4mTcz1v7us9SoCdBle74TOSyVbxQjRTw-~cgNCxrOmWBACUJVZxFHPuDU~yJFPnSRwtauQFWqBEjfgg2kA~xA4Sy6q4YOPukAvVkTDp64m6OrU1qYBgmMPmcBkvUfKu5oGKOjtelR63UWUXi2pSv0aGq2x1TVl24avXUoCqWftsfwOQH31-D9SDTkt4geEh85yK~RfrqlzsmhoVHKGdEf94jqQJBEGocFcJCrAOO7OOn4N5LtNHGpXzq3MKsSbyuAhz24VG-RYu2JmTpk8qv8Kw__"
+            width={'170px'}
+          />
           <div>
-            <Button text={'Hola, Administrador'} type="outlined">
-              <img src="./icons/user-white.svg" alt="icono" />
-            </Button>
+            <Button text={'Hola, Administrador'} type="outlined" icon="user" size="al"></Button>
             <Button text={'Cerrar Sesión'} type="yellow" />
           </div>
         </StyledHeaderAdminContent>

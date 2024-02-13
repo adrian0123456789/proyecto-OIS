@@ -17,9 +17,17 @@ const StyledHeadSection = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
   h3 {
     font-size: 28px;
     font-weight: 600;
+  }
+  img {
+    width: 29px;
   }
 `;
 
@@ -29,15 +37,21 @@ const HomeView = () => {
       <Banner />
       <StyledProgramsByFieldSection>
         <StyledHeadSection>
-          <h3>Descubre programas por disciplina</h3>
-          <Button text={'Ver todos las disciplinas'} size="lg" />
+          <div>
+            <img src="./icons/circle.svg" />
+            <h3>Descubre programas por disciplina</h3>
+          </div>
+          <Button text={'Ver todos las disciplinas'} size="lg" icon="arrow" />
         </StyledHeadSection>
         <ProgramByFieldList />
       </StyledProgramsByFieldSection>
       <StyledProgramsByFieldSection>
         <StyledHeadSection>
-          <h3>Programas recién agregados</h3>
-          <Button text={'Ver todos los programas'} size="lg" />
+          <div>
+            <img src="./icons/circle.svg" />
+            <h3>Programas recién agregados</h3>
+          </div>
+          <Button text={'Ver todos los programas'} size="lg" icon="arrow" />
         </StyledHeadSection>
         <NewPromgramList />
       </StyledProgramsByFieldSection>

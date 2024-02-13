@@ -10,6 +10,7 @@ const StyledContentBanner = styled.div`
   max-width: 1440px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: 0 auto;
   padding: 100px 0;
 `;
@@ -49,7 +50,7 @@ const Banner = () => (
       <StyledTextBanner>
         <h2>Empresa Profesional de Capacitaciones</h2>
         <p>¡Somos OIS y estamos comprometidos con las empresas que priorizan la seguridad!</p>
-        <Button text="Inscribirme" type="yellow" />
+        <Button text="Inscribirme" type="yellow" icon="arrow" />
       </StyledTextBanner>
       <StyledImageBanner>
         <img src="https://s3-alpha-sig.figma.com/img/cb4e/f5d3/2eadc9741b8713c62ab32e5108116307?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eA4EBvUoVgExQ3wtM9R27jFAMV5exZtq62mFAy~ippEcU9XnFK2UOc6NPDIljnFgZmrGGp6DmI7a9Y7x5Q~ZQ-2c0rP-18X0S45FwqtC-umGz-3xQSVTW4eSZYDp31tXXDp49f704HPlj47KDfUB1f16Gq6eFlbqlENIH4Ry8-QvOqOXqbGo16pce4NUvL7x7lWrEFTRskaXeROCXq6Qprw48iMBFg7Ax7NAqh7g83vY-xMZWck0anAzty8ZH1Qx1xk7nBzPWUvgF2n-yQSYtSdNG70PVzOJKySLE1Mo~CRfDLZLAsVsfjQ6gxcrsvJMBNnl6KAcY1jaqouBslwFyw__" />

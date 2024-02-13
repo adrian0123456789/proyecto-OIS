@@ -7,7 +7,7 @@ const StyledNewProgram = styled.div`
   overflow: hidden;
   width: 250px;
   img {
-    width: 238px;
+    width: 100%;
     height: 140px;
   }
 `;
@@ -40,7 +40,16 @@ const StyledNewProgramPrice = styled.div`
 const StyledNewProgramDuration = styled.div`
   background-color: #f4f4f4;
   border-radius: 6px;
-  padding: 4px;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  img {
+    width: 13px;
+    height: 13px;
+  }
 `;
 const StyledNewProgramAction = styled.div`
   display: flex;
@@ -49,6 +58,7 @@ const StyledNewProgramAction = styled.div`
   padding: 3px;
   a {
     text-decoration: underline;
+    cursor: pointer;
   }
 `;
 const StyledNewProgramFooter = styled.div`
@@ -67,11 +77,14 @@ const NewProgram = ({ program }) => {
         <img src={program.img} />
         <StyledNewProgramTextInfo>{program.info}</StyledNewProgramTextInfo>
         <StyledNewProgramPrice>
-          <StyledNewProgramDuration>{program.duration}</StyledNewProgramDuration>
+          <StyledNewProgramDuration>
+            <img src="./icons/clock.svg" />
+            {program.duration}
+          </StyledNewProgramDuration>
           <p>S/.{program.price}</p>
         </StyledNewProgramPrice>
         <StyledNewProgramAction>
-          <Button text="Inscribirme" type="yellow" size="sm">
+          <Button text="Inscribirme" type="yellow" size="sm" fontWigth="admin" font="md">
             Inscribirme
           </Button>
           <a>Ver más</a>
