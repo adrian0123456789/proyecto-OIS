@@ -13,6 +13,10 @@ const StyledContentBanner = styled.div`
   align-items: center;
   margin: 0 auto;
   padding: 100px 0;
+  @media (max-width: 450px) {
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+  }
 `;
 const StyledTextBanner = styled.div`
   display: flex;
@@ -28,6 +32,17 @@ const StyledTextBanner = styled.div`
     font-size: 23px;
     font-weight: 500;
   }
+  @media (max-width: 450px) {
+    width: 100%;
+    h2 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 `;
 const StyledImageBanner = styled.div`
   display: flex;
@@ -41,6 +56,14 @@ const StyledImageBanner = styled.div`
   img {
     border-radius: 256px;
     width: 90%;
+  }
+  @media (max-width: 450px) {
+    width: 320px;
+    height: 320px;
+    padding: 50px 0;
+    img {
+      width: 90%;
+    }
   }
 `;
 

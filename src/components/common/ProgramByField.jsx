@@ -22,6 +22,11 @@ const StyledProgramByField = styled.div`
     font-size: 18px;
     font-weight: 500;
   }
+  @media (max-width: 450px) {
+    width: 170px;
+    height: 170px;
+    gap: 12px;
+  }
 `;
 
 const ProgramByField = ({ img, name }) => {

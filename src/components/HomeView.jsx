@@ -29,6 +29,16 @@ const StyledHeadSection = styled.div`
   img {
     width: 29px;
   }
+  @media (max-width: 450px) {
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+    gap: 15px;
+    h3 {
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
 `;
 
 const HomeView = () => {

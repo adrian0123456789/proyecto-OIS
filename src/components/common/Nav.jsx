@@ -17,11 +17,18 @@ const StyledLogo = styled.div`
   img {
     width: 100%;
   }
+  @media (max-width: 450px) {
+    padding: 5px;
+    width: 200px;
+  }
 `;
 const StyledNavButtons = styled.div`
   display: flex;
   gap: 12px;
   padding: 17px;
+  @media (max-width: 450px) {
+    display: none;
+  }
 `;
 
 const Nav = () => (

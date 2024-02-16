@@ -7,12 +7,20 @@ const StyledFooter = styled.div`
 const StyledFooterInformation = styled.div`
   background-color: #f6f4f3;
   padding: 46px 0;
+  @media (max-width: 450px) {
+    padding: 40px 20px;
+  }
 `;
 const StyledFooterContent = styled.div`
   width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 450px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
 `;
 const StyledFooterInformationData = styled.div`
   display: flex;
@@ -29,8 +37,6 @@ const StyledFooterInformationData = styled.div`
 `;
 const StyledFooterAuthor = styled.div`
   background-color: #054580;
-  display: flex;
-  justify-content: space-around;
   color: white;
   padding: 20px 0;
   font-size: 14px;
@@ -42,6 +48,8 @@ const StyledFooterAuthor = styled.div`
       display: flex;
       justify-content: flex-end;
     }
+  }
+  @media (max-width: 450px) {
   }
 `;
 

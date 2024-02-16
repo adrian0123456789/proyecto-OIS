@@ -47,6 +47,10 @@ const StyledNewProgramList = styled.div`
   justify-content: space-between;
   gap: 5px;
   width: 100%;
+  @media (max-width: 450px) {
+    justify-content: center;
+    gap: 15px;
+  }
 `;
 const NewPromgramList = () => {
   return (

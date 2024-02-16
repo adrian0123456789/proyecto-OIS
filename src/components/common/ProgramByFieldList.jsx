@@ -61,6 +61,10 @@ const StyledProgramByFieldList = styled.div`
   justify-content: space-between;
   row-gap: 40px;
   width: 100%;
+  @media (max-width: 450px) {
+    justify-content: space-evenly;
+    row-gap: 30px;
+  }
 `;
 
 const ProgramByFieldList = () => {
